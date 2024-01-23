@@ -84,7 +84,7 @@ GMSP_PROG = os.path.join(utilitiesPath, "gmst", "gmst.pl")
 GMST_CMD = "perl " + GMSP_PROG + " -faa --strand direct --fnn --output {o} {i}"
 
 GTF2GENEPRED_PROG = os.path.join(utilitiesPath,"gtfToGenePred")
-GFFREAD_PROG = "gffread"
+GFFREAD_PROG = os.path.join(utilitiesPath,"gffread-0.12.7.Linux_x86_64","gffread")
 
 if distutils.spawn.find_executable(GTF2GENEPRED_PROG) is None:
     print("Cannot find executable {0}. Abort!".format(GTF2GENEPRED_PROG), file=sys.stderr)
