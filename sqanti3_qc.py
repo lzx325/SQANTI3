@@ -122,9 +122,9 @@ FIELDS_CLASS = ['isoform', 'chrom', 'strand', 'length',  'exons',  'structural_c
 RSCRIPTPATH = distutils.spawn.find_executable('Rscript')
 RSCRIPT_REPORT = 'SQANTI3_report.R'
 
-if os.system(RSCRIPTPATH + " --version")!=0:
-    print("Rscript executable not found! Abort!", file=sys.stderr)
-    sys.exit(-1)
+# if os.system(RSCRIPTPATH + " --version")!=0:
+#     print("Rscript executable not found! Abort!", file=sys.stderr)
+#     sys.exit(-1)
 
 SPLIT_ROOT_DIR = 'splits/'
 
